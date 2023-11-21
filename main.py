@@ -55,7 +55,7 @@ os.rename(pdb_path, pdb_file)
 parser = PDBParser(QUIET=True)
 structure = parser.get_structure(pdb_id, pdb_file)
 
-# obliczanie kątów phi i psi
+# obliczanie kątów phi, psi
 phi_psi_data = calculate_phi_psi_angles(structure, '/usr/bin/dssp')
 
 # wykres Ramachandrana
